@@ -285,7 +285,7 @@ function handleSubmit(e) {
       btn.innerHTML = '<span>Send Message</span><i class="bx bx-send"></i>';
       btn.disabled = false;
     });
-}
+
 
 
 /* ============================
