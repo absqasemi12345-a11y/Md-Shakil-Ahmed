@@ -135,39 +135,35 @@ section{padding:110px 8%;position:relative;overflow:hidden}
 .fb-wp i{color:#21759b}
 @keyframes floatBadge{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 
-/* সোশ্যাল আইকনগুলোকে বাটনের নিচে সেট করা */
+/* সোশ্যাল আইকন পজিশনিং */
 .home-sci {
     display: flex;
-    flex-direction: row; /* আইকনগুলো পাশাপাশি থাকবে */
+    flex-direction: row; /* আইকনগুলো পাশাপাশি দেখাবে */
     align-items: center;
-    gap: 20px; /* আইকনগুলোর মাঝের গ্যাপ */
-    margin-top: 30px; /* বাটন থেকে নিচে নামানোর জন্য */
-    
-    /* নিচের লাইনগুলো গুরুত্বপূর্ণ: এগুলো আগের সাইডবার পজিশন বাতিল করবে */
-    position: relative; 
-    left: 0;
-    bottom: 0;
-    width: fit-content;
+    gap: 1.5rem; /* আইকনগুলোর মাঝের দূরত্ব */
+    margin-top: 2.5rem; /* বাটন থেকে নিচে গ্যাপ */
+    position: relative; /* সাইডবার পজিশন বাতিল করার জন্য */
+    z-index: 10;
 }
 
-/* লম্বা দাগটি বন্ধ করার জন্য (যদি আপনার স্ক্রিনশটের মতো ক্লিন লুক চান) */
+/* লম্বা দাগটি মুছে ফেলার জন্য */
 .sci-line {
     display: none;
 }
 
-/* আইকনগুলোর ডিজাইন */
+/* আইকনগুলোর গোল ডিজাইন */
 .sci-link {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
     background: transparent;
-    border: 2px solid #00d4ff; /* আপনার দেওয়া থিম কালার */
+    border: 2px solid #00d4ff; /* আপনার থিম কালার */
     border-radius: 50%;
     font-size: 20px;
     color: #00d4ff;
-    transition: .5s ease;
+    transition: 0.4s ease;
 }
 
 .sci-link:hover {
@@ -176,6 +172,7 @@ section{padding:110px 8%;position:relative;overflow:hidden}
     box-shadow: 0 0 15px #00d4ff;
     transform: translateY(-5px);
 }
+
 
 
 /* ABOUT */
